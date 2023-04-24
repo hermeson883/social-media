@@ -26,6 +26,14 @@ export function Post(){
                     <a href="">#rocketseat</a>{' '}
                 </p>
             </div>
+
+            <form action="" className={styles.commentForm}>
+                <strong>Deixe seu Feedback</strong>
+                <textarea placeholder='Digite algo'></textarea>
+                <footer>
+                    <button type='submit'>Publicar</button>
+                </footer>
+            </form>
         </article>
     )
 }
