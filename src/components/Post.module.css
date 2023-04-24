@@ -130,3 +130,7 @@
 .commentForm textarea:focus{
     border: var(--green-500);
 }
+
+.commentList{
+    font-size: 2rem;
+}
