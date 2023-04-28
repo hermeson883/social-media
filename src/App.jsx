@@ -14,9 +14,7 @@ export function App() {
       <div className={style.wrapper}>
         <Sidebar/>
         
-        <aside>
-
-        </aside>
+       
         <main>
           <Post author='Hermeson do Vale' content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nisi quas ea maiores modi delectus voluptate laborum veritatis voluptas, odit, quisquam facere quia alias reiciendis cumque culpa soluta error vero?"  />
           <Post author='Felipe' content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nisi quas ea maiores modi delectus voluptate laborum veritatis voluptas, odit, quisquam facere quia alias reiciendis cumque culpa soluta error vero?" />
