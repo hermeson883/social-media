@@ -6,10 +6,10 @@ export function Post(){
         <article className={styles.post}>
             <header className={styles.content}>
                 <div className={styles.author}>
-                    <Avatar src="https://avatars.githubusercontent.com/u/72263429?v=4" alt=""/>
+                    <Avatar hasborder={false}  src="https://avatars.githubusercontent.com/u/64994893?v=4" alt=""/>
                     <div className={styles.authorInfor}>
-                        <strong>Hermeson V Beserra</strong>
-                        <span>Data Science & Web Dev</span>
+                        <strong>Gabriel dos Santos Soares</strong>
+                        <span>Game Developer & Python programmer</span>
                     </div>
                 </div>
                 <time title='11 de maio às 08:13h' dateTime='2022-05-11 08:13:30'>Publicado há 1 hora</time>
@@ -17,7 +17,7 @@ export function Post(){
             <div className={styles.content}>
                 <p>Fala galeraa 👋</p>
 
-                <p>Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀</p>
+                <p>Acabei de subir mais um projeto no meu portifolio. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀</p>
 
                 <p>👉{' '}<a href="">jane.design/doctorcare</a></p>
 

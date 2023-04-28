@@ -1,6 +1,7 @@
 import style from './Avatar.module.css'
-export function Avatar(proops){
+
+export function Avatar({ hasborder=true, src}){
     return (
-        <img src={proops.src} alt="Foto de perfil do usuário" className={style.avatar}/>
+        <img className={hasborder ? style.avatarWithBorder : style.avatar} src={src} alt="Foto de perfil do usuário"/>
     );
 }

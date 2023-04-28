@@ -13,7 +13,7 @@ export function App() {
 
       <div className={style.wrapper}>
         <Sidebar/>
-
+        
         <aside>
 
         </aside>
