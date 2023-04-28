@@ -1,5 +1,5 @@
 import { Avatar } from './Avatar';
-import style from './Comment';
+import style from './Comment.module.css';
 import {ThumbsUp, Trash} from 'phosphor-react'
 
 export default function Comment(){
@@ -10,7 +10,7 @@ export default function Comment(){
                 <div className={style.commentContent}>
                     <header>
                         <div className={style.authorAndTime}>
-                            <strong>Hermeson V Beserra <span>(vôce)</span></strong>
+                            <strong>Hermeson V Beserra <span>(vôce) </span></strong>
                             <time title='11 de Maio às 08:13h' dateTime="2023-05-11 08:13:30">Cerca de 1H atrás</time>
                         </div>
 
@@ -20,11 +20,12 @@ export default function Comment(){
                     </header>
                     <p>Muito bom, Parabéns!!</p>
                 </div>
-
-                <button>
-                    <ThumbsUp size={20} />
-                    Aplaudir <span>20</span>
-                </button>
+                <footer>
+                    <button>
+                        <ThumbsUp size={20} />
+                        Aplaudir  <span>20</span>
+                    </button>
+                </footer>
 
             </div>
         </div>
