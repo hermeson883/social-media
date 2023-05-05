@@ -1,10 +1,19 @@
 import styles from './Post.module.css';
-import Comentario from './Comment';
+import { Comment } from './Comment';
 import { Avatar } from './Avatar';
 import {format, formatDistanceToNow} from 'date-fns';
 import ptBR from 'date-fns/locale/pt-BR'
+import { useState } from 'react';
+
+//estado
+// estado = Algo que eu quero que o React monitore
 
 export function Post({author, publishedAt, content}){
+    const [comments, setComments] = useState([
+        1,
+        2,
+    ])
+
     const publishedDateFormated = format(publishedAt, "dd 'de' LLLL 'às' HH:MMh", {
         locale: ptBR
     })
@@ -13,6 +22,13 @@ export function Post({author, publishedAt, content}){
         locale: ptBR,
         addSuffix: true 
     })
+    
+    function handleCreateElement() {
+        event.preventDefault();
+
+        setComments([...comments, comments.length + 1] )
+    }
+    
 
     return (
         <article className={styles.post}>
@@ -37,7 +53,7 @@ export function Post({author, publishedAt, content}){
                 }
             </div>
 
-            <form action="" className={styles.commentForm}>
+            <form onSubmit={handleCreateElement} className={styles.commentForm}>
                 <strong>Deixe seu Feedback</strong>
                 <textarea placeholder='Digite algo'></textarea>
                 <footer>
@@ -46,9 +62,9 @@ export function Post({author, publishedAt, content}){
             </form>
 
             <div className={styles.commentList}>
-                <Comentario />
-                <Comentario />
-                <Comentario />                
+              {comments.map(comment => {
+                    return <Comment />
+                })}
             </div>
         </article>
     )

@@ -2,7 +2,7 @@ import { Avatar } from './Avatar';
 import style from './Comment.module.css';
 import {ThumbsUp, Trash} from 'phosphor-react'
 
-export default function Comment(){
+export function Comment(){
     return (
         <div className={style.comment}>
             <Avatar src="https://github.com/hermeson883.png" hasborder= {false}/>
